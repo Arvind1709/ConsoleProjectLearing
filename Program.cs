@@ -4,4 +4,4 @@
 using ConsoleProjectLearing;
 
 BasicOperationsOnString basicOperationsOnString = new BasicOperationsOnString();
-basicOperationsOnString.ExampleOfStringList();
+basicOperationsOnString.ExampleOfStringBuilder();

@@ -63,5 +63,62 @@ namespace ConsoleProjectLearing
             // Count elements
             Console.WriteLine($"Total fruits: {fruits.Count}");
         }
+        public void ExampleOfRawString()
+        {
+                    string jsonData = """
+                {
+                    "name": "John Doe",
+                    "age": 35,
+                    "skills": ["C#", "SQL", "JavaScript"]
+                }
+                """;
+
+            Console.WriteLine("JSON Data:");
+            Console.WriteLine(jsonData);
+
+                    string sqlQuery = """
+                SELECT *
+                FROM Employees
+                WHERE Department = "IT" AND Status = "Active";
+                """;
+
+            Console.WriteLine("\nSQL Query:");
+            Console.WriteLine(sqlQuery);
+        }
+
+        public void ExampleOfStringBuilder()
+        {
+            string DefinationReadIt = """
+                The StringBuilder class in C# is part of the System.
+                Text namespace and is used to efficiently manipulate strings when 
+                frequent modifications are required. Unlike the String class, 
+                which creates a new object in memory for each modification 
+                (since strings are immutable), StringBuilder modifies the existing 
+                memory buffer, making it more performance-efficient for scenarios 
+                involving numerous string manipulations.
+                """;
+
+            StringBuilder sb = new StringBuilder("Learning C# is fun!");
+
+            // Append text
+            sb.Append(" Let's master StringBuilder.");
+            Console.WriteLine("After Append: " + sb);
+
+            // Insert text
+            sb.Insert(18, "very ");
+            Console.WriteLine("After Insert: " + sb);
+
+            // Replace text
+            sb.Replace("fun", "exciting");
+            Console.WriteLine("After Replace: " + sb);
+
+            // Remove text
+            sb.Remove(0, 9);
+            Console.WriteLine("After Remove: " + sb);
+
+            // Clear the builder
+            sb.Clear();
+            Console.WriteLine("After Clear: " + sb.Length); // Output: 0
+        }
     }
 }
