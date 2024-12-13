@@ -34,5 +34,34 @@ namespace ConsoleProjectLearing
             string name = "John";
             Console.WriteLine($"Hello, {name}!");
         }
+
+        public void ExampleOfStringList()
+        {
+            List<string> fruits = new List<string> { "Apple", "Banana", "Cherry", "Date" };
+
+            // Add elements
+            fruits.Add("Elderberry");
+            fruits.AddRange(new string[] { "Fig", "Grape" });
+
+            // Remove an element
+            fruits.Remove("Banana");
+
+            // Sort and reverse
+            fruits.Sort();
+            fruits.Reverse();
+
+            // Find an element
+            string firstStartingWithC = fruits.Find(f => f.StartsWith("C"));
+
+            // Display elements
+            Console.WriteLine("Fruits in the list:");
+            foreach (var fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
+
+            // Count elements
+            Console.WriteLine($"Total fruits: {fruits.Count}");
+        }
     }
 }
