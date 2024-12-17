@@ -3,5 +3,6 @@
 
 using ConsoleProjectLearing;
 
-BasicOperationsOnString basicOperationsOnString = new BasicOperationsOnString();
-basicOperationsOnString.ExampleOfStringBuilder();
+ControlFlow controlFlow = new ControlFlow();
+
+controlFlow.switchCaseOne();
