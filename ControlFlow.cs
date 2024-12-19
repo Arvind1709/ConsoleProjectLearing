@@ -133,5 +133,49 @@ namespace ConsoleProjectLearing
 
             Console.WriteLine(result);
         }
+
+        public void whileControl()
+        {
+            string explanation = """
+                                The expression, which follows the while keyword, must be a boolean expression that evaluates to true or false.
+
+                The while statement evaluates the expression first. If the expression evaluates to true, it’ll execute the block inside the curly braces.
+
+                Once completed executing the block, the while statement checks the expression again. And it’ll execute the block again as long as the expression is true.
+
+                If the expression is false, the while statement exits and passes the control to the statement after it.
+
+                Therefore, you need to change some variables inside the block to make the expression false at some point. Otherwise, you’ll have an indefinite loop.
+
+                Since the expression is checked at the beginning of each iteration, the while statement is often called a pretest loop.
+                """;
+            double number = 0,
+            total = 0,
+            count = 0,
+            average = 0;
+
+            string input = "";
+
+
+            Console.WriteLine("Enter a list of numbers to calculate the average (Q - quit):");
+
+            while (input != "Q" && input != "q")
+            {
+                input = Console.ReadLine();
+                if (input != "Q" && input != "q")
+                {
+                    number = Convert.ToDouble(input);
+                    total += number;
+                    count++;
+                }
+            }
+
+            if (count > 0)
+            {
+                average = total / count;
+            }
+
+            Console.WriteLine($"Average:{average}");
+        }
     }
 }

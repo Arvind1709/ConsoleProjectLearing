@@ -3,6 +3,8 @@
 
 using ConsoleProjectLearing;
 
-ControlFlow controlFlow = new ControlFlow();
+DefaultParameter defaultParameter = new DefaultParameter();
 
-controlFlow.switchCaseOne();
+var netPrice = defaultParameter.calculatePrice(100);
+
+Console.WriteLine($"The net price is {netPrice:0.##}");
