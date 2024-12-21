@@ -3,8 +3,15 @@
 
 using ConsoleProjectLearing;
 
-DefaultParameter defaultParameter = new DefaultParameter();
+Console.WriteLine($"Square of any number is : {StaticMathHelper.Square(2)}");
+Console.WriteLine(StaticMathHelper.ApplicationName);
 
-var netPrice = defaultParameter.calculatePrice(100);
+Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 100
+StaticMathHelper.MaxUsers = 200;
+Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 200
 
-Console.WriteLine($"The net price is {netPrice:0.##}");
+StaticMathHelper.Log("Application started");
+
+StaticMathHelper.OnNotify += (msg) => Console.WriteLine($"Notification: {msg}");
+StaticMathHelper.Notify("New update available!");  // Output: Notification: New update available!
+Console.WriteLine("Arvind");
