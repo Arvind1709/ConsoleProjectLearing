@@ -7,20 +7,13 @@ using ConsoleProjectLearing;
 
 Console.WriteLine("Main method starts.");
 
-// swap integers
-int x = 10, y = 20;
+string name = null;
+string result = name ?? "Default Name";
+Console.WriteLine(result); // Output: Default Name
 
-Console.WriteLine($"Before swapping: x={x},y={y}");
-GenericClass.Swap(ref x, ref y);
-Console.WriteLine($"After swapping: x={x},y={y}");
-
-// swap strings
-
-string s1 = "hello", s2 = "goodbye";
-
-Console.WriteLine($"Before swapping: s1={s1},s2={s2}");
-GenericClass.Swap(ref s1, ref s2);
-Console.WriteLine($"After swapping: s1={s1},s2={s2}");
+string name1 = "Arvind";
+string result1 = name1 ?? "Default Name";
+Console.WriteLine(result1); // Output: Default Name
 
 
 Console.WriteLine("Main method ends.");
