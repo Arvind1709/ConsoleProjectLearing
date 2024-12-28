@@ -17,10 +17,11 @@ namespace ConsoleProjectLearing
         {
             if (radius <= 0)
             {
-                throw new ArgumentOutOfRangeException(
-                     nameof(radius),
-                    "The radius should be positive"
-                 );
+                //throw new ArgumentOutOfRangeException(
+                //     nameof(radius),
+                //    "The radius should be positive"
+                // );
+                throw new ArgumentException("","radius");         
             }
             Radius = radius;
         }
