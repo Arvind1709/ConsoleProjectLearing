@@ -17,9 +17,8 @@ Console.WriteLine("Main method starts.");
 
 try
 {
-    ExceptionExamples exceptionExamples = new ExceptionExamples();
-    string result = exceptionExamples.devideByZero();
-    Console.WriteLine(result);
+    ReadSeparateAndInsertIntoDatabase readSeparateAndInsertIntoDatabase = new ReadSeparateAndInsertIntoDatabase();
+    readSeparateAndInsertIntoDatabase.ReadDataAndInsertIntoDatabase();
 }
 catch (Exception ex)
 {
@@ -27,4 +26,4 @@ catch (Exception ex)
 
 }
 
-    Console.WriteLine("Main method ends.");
+Console.WriteLine("Main method ends.");

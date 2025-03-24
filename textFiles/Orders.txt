@@ -1,0 +1,19 @@
+﻿#Order
+OrderId,OrderDate,CustomerName
+O001,2025-03-27,John Doe
+O002,2025-03-28,Jane Smith
+
+#OrderItems
+ItemId,OrderId,ItemName,Quantity,Price
+I001,O001,Book,2,500
+I002,O001,Notebook,1,300
+I003,O002,Pen,3,100
+I004,O002,Pencil,5,20
+
+#OrderSubItems
+SubItemId,ItemId,SubItemName,Quantity,Price
+S001,I001,Bookmark,2,50
+S002,I001,GiftWrap,1,20
+S003,I002,Cover,1,30
+S004,I003,Box,1,40
+S005,I004,Sticker,3,15
