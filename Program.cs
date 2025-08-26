@@ -1,24 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-using ConsoleProjectLearing;
-
-// Program.cs
+//using ConsoleProjectLearing;
+//using ConsoleProjectLearing.AppDbContext;
+//using ConsoleProjectLearning;
+//// Program.cs
 
 Console.WriteLine("Main method starts.");
-
-//string name = null;
-//string result = name ?? "Default Name";
-//Console.WriteLine(result); // Output: Default Name
-
-//string name1 = "Arvind";
-//string result1 = name1 ?? "Default Name";
-//Console.WriteLine(result1); // Output: Default Name
-
 try
 {
-    ReadSeparateAndInsertIntoDatabase readSeparateAndInsertIntoDatabase = new ReadSeparateAndInsertIntoDatabase();
-    readSeparateAndInsertIntoDatabase.ReadDataAndInsertIntoDatabase();
+
+
 }
 catch (Exception ex)
 {
@@ -27,3 +19,29 @@ catch (Exception ex)
 }
 
 Console.WriteLine("Main method ends.");
+
+
+
+
+// Run the application
+//app.Run();
+
+//public class Program
+//{
+//    public static async Task Main(string[] args)
+//    {
+//        Console.WriteLine("Main method starts.");
+
+//        try
+//        {
+//            TaskAwaitAsync taskAwaitAsync = new TaskAwaitAsync();
+//            await taskAwaitAsync.HaveDinnerAsync();  // Await the async call
+//        }
+//        catch (Exception ex)
+//        {
+//            Console.WriteLine("General exception");
+//        }
+
+//        Console.WriteLine("Main method ends.");
+//    }
+//}

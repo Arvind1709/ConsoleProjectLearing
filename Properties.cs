@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleProjectLearing
+﻿namespace ConsoleProjectLearing
 {
-    public class Properties
+    class Properties
     {
         private string firstName;
         private string lastName;
@@ -65,7 +59,7 @@ namespace ConsoleProjectLearing
             }
         }
 
-        public string FullName
+        internal string FullName
         {
             get
             {
