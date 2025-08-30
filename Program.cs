@@ -9,8 +9,6 @@
 Console.WriteLine("Main method starts.");
 try
 {
-
-
 }
 catch (Exception ex)
 {
