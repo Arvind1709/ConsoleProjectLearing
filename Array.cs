@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Xml.Linq;
-using System.Buffers.Text;
-using System.Drawing;
-
-namespace ConsoleProjectLearing
+﻿namespace ConsoleProjectLearing
 {
-    public class Array
+    public class Array1
     {
         //int[] scores = { 3, 2, 5, 4, 1 };
 
@@ -24,13 +13,13 @@ namespace ConsoleProjectLearing
                 The Length property returns the size of an array.
                 """;
             int[] variableInt = { 1, 2, 3 };
-            string[] variableString = { "Arvind","Yadav","Krishna"};
+            string[] variableString = { "Arvind", "Yadav", "Krishna" };
             int[] scores = new int[5] { 3, 2, 5, 4, 1 };
 
             for (int i = 0; i < scores.Length; i++)
             {
-                Console.WriteLine(  $"Score is : {scores[i]}");
-               
+                Console.WriteLine($"Score is : {scores[i]}");
+
             }
         }
 
@@ -57,6 +46,42 @@ namespace ConsoleProjectLearing
             // 4. Extract the highest sale (last element)
             int highestSale = weeklySales[^1];
             Console.WriteLine("Highest Sale: " + highestSale); // Output: 450
+        }
+
+        public void EvenAndOddNumbersInArray()
+        {
+            int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+            int countEven = 0;
+            int countOdd = 0;
+            foreach (var item in numbers)
+            {
+                if (item % 2 == 0)
+                {
+                    countEven += 1;
+                }
+                else
+                {
+                    countOdd += 1;
+                }
+            }
+            Console.WriteLine("Count of Even is " + countEven);
+            Console.WriteLine("Count of Odd is " + countOdd);
+        }
+
+        public void ReverseArray()
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] reversArray = new int[numbers.Length];
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                reversArray[i] = numbers[numbers.Length - 1 - i];
+            }
+
+            foreach (var item in reversArray)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

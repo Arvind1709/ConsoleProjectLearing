@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleProjectLearing
+﻿namespace ConsoleProjectLearing
 {
     public static class StaticMathHelper
     {
-        
+
         #region Fields
         public static string ApplicationName = "MyApp";
         public static int MaxUsers = 100;
@@ -51,7 +45,7 @@ namespace ConsoleProjectLearing
         #endregion
 
         // Static method to calculate the square of a number
-        public static int Square(int number)
+        public static int Square1(int number)
         {
             return number * number;
         }
@@ -77,17 +71,17 @@ namespace ConsoleProjectLearing
         }
     }
 
-        //Console.WriteLine($"Square of any number is : {StaticMathHelper.Square(2)}");
-        //Console.WriteLine(StaticMathHelper.ApplicationName);
-        //
-        //Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 100
-        //StaticMathHelper.MaxUsers = 200;
-        //Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 200
-        //
-        //StaticMathHelper.Log("Application started");
-        //
-        //StaticMathHelper.OnNotify += (msg) => Console.WriteLine($"Notification: {msg}");
-        //StaticMathHelper.Notify("New update available!");  // Output: Notification: New update available!
+    //Console.WriteLine($"Square of any number is : {StaticMathHelper.Square(2)}");
+    //Console.WriteLine(StaticMathHelper.ApplicationName);
+    //
+    //Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 100
+    //StaticMathHelper.MaxUsers = 200;
+    //Console.WriteLine(StaticMathHelper.MaxUsers);  // Output: 200
+    //
+    //StaticMathHelper.Log("Application started");
+    //
+    //StaticMathHelper.OnNotify += (msg) => Console.WriteLine($"Notification: {msg}");
+    //StaticMathHelper.Notify("New update available!");  // Output: Notification: New update available!
 
 }
 
