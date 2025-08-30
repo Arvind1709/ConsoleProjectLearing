@@ -9,11 +9,11 @@
 Console.WriteLine("Main method starts.");
 try
 {
+    Console.WriteLine("This change is for test");
 }
 catch (Exception ex)
 {
     Console.WriteLine("General exception");
-
 }
 
 Console.WriteLine("Main method ends.");
