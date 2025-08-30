@@ -9,7 +9,7 @@
 Console.WriteLine("Main method starts.");
 try
 {
-    Console.WriteLine("This change is for test,,");
+    Console.WriteLine("This change is for test");
 }
 catch (Exception ex)
 {
