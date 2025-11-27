@@ -6,10 +6,14 @@
 //using ConsoleProjectLearning;
 //// Program.cs
 
+using ConsoleProjectLearing;
+
 Console.WriteLine("Main method starts.");
 try
 {
     Console.WriteLine("This change is for test...");
+    ExceptionExamples exceptionExamples = new ExceptionExamples();
+    exceptionExamples.RunDemo("SqlException", exceptionExamples.ThrowSqlException);
 }
 catch (Exception ex)
 {
