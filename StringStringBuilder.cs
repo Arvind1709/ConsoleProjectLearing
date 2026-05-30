@@ -8,6 +8,12 @@ namespace ConsoleProjectLearing
 {
     public class StringStringBuilder
     {
+        /// <summary>
+        /// string in c# is immutable, meaning every modification creates a new object in heap memory.
+        ///string builder is mutable and modifies the same internal buffer without creating multiple objects.
+        ///Therefore, StringBuilder is more efficient for frequent string manipulations such as loops, dynamic text generation, or large concatenations.
+        /// </summary>
+
         public void StringVsStringBuilder()
         {
             string str = "Hello";
@@ -46,6 +52,14 @@ namespace ConsoleProjectLearing
             }
             Console.WriteLine(str);
         }
+
+        /// <summary>
+        /// The key distinction between String and StringBuilder lies in immutability semantics and allocation behavior. 
+        ///Strings leverage immutability for thread safety, interning, and stable hashing, but repeated concatenations generate 
+        ///excessive heap allocations and GC pressure. StringBuilder internally manages a resizable character buffer, significantly 
+        ///reducing allocation overhead during high-frequency text mutations, making it preferable for performance-sensitive 
+        ///workloads such as serialization, logging, and dynamic content generation.
+        /// </summary>
 
     }
 
