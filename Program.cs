@@ -11,9 +11,15 @@ using ConsoleProjectLearing;
 Console.WriteLine("Main method starts.");
 try
 {
-    Console.WriteLine("This change is for test...");
-    ExceptionExamples exceptionExamples = new ExceptionExamples();
-    exceptionExamples.RunDemo("SqlException", exceptionExamples.ThrowSqlException);
+    HashtableAndDictionary hashtableAndDictionary = new HashtableAndDictionary();
+    hashtableAndDictionary.RunDemo();
+    hashtableAndDictionary.HashTableVsDictionary();
+    hashtableAndDictionary.TypeSafetyDemo();
+    hashtableAndDictionary.TypeSafetyDemo2();
+    hashtableAndDictionary.HashTableExample();
+    hashtableAndDictionary.HashTableExample2();
+    hashtableAndDictionary.DictionaryExample();
+    hashtableAndDictionary.DictionaryExample2();
 }
 catch (Exception ex)
 {
